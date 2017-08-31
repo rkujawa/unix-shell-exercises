@@ -1,0 +1,51 @@
+PREP_SCRIPT=prep.sh
+GRADE_SCRIPT=grade.sh
+EXERCISE_SETUP_ENVFILE=./.exenv
+
+. $(dirname $0)/${EXERCISE_SETUP_ENVFILE}
+
+sanity_check() {
+
+	if [ ! -f ${EXERCISE_SETUP_ENVFILE} ] ; then
+		echo Failure: Please run this script from exercise subdirectory.
+		echo Consult instructor if in doubt.
+		exit 10
+	fi
+
+
+	if [ -z "$EXERCISE" ] ; then
+		echo Failure: \$EXERCISE not set. Contact instructor. 
+		exit 10
+	fi
+}
+
+usage() {
+	echo Usage: $0 'setup|grade|clean'
+}
+
+generic_setup() {
+	echo generic setup things
+	exercise_setup
+}
+
+subcmd_run() {
+
+	case "$1" in
+	setup)
+		generic_setup
+		;;
+	grade)
+		echo grade
+		;;
+	clean)
+		echo clean
+		;;
+	*)
+		usage
+		;;
+	esac
+
+}
+
+#EXERCISE_WORK_DIR=/tmp/
+
