@@ -1,12 +1,13 @@
 PREP_SCRIPT=prep.sh
-GRADE_SCRIPT=grade.sh
-EXERCISE_SETUP_ENVFILE=./.exenv
+EXERCISE_ENVFILE=./.exenv
+EXERCISE_SETUP_ENVFILE=./.exsetupenv
+INSTRUCTIONS_TEXT=instructions.md
 
-. $(dirname $0)/${EXERCISE_SETUP_ENVFILE}
+. $(dirname $0)/${EXERCISE_ENVFILE}
 
 sanity_check() {
 
-	if [ ! -f ${EXERCISE_SETUP_ENVFILE} ] ; then
+	if [ ! -f ${EXERCISE_ENVFILE} ] ; then
 		echo Failure: Please run this script from exercise subdirectory.
 		echo Consult instructor if in doubt.
 		exit 10
@@ -20,12 +21,64 @@ sanity_check() {
 }
 
 usage() {
-	echo Usage: $0 'setup|grade|clean'
+	echo Usage: $0 'instructions|setup|grade|clean'
 }
 
 generic_setup() {
+
+	echo Setting up exercise: $EXERCISE
+	echo 
+
+	if [ -f ${EXERCISE_SETUP_ENVFILE} ] ; then
+		. ${EXERCISE_SETUP_ENVFILE}
+		echo Exercise seem to be already set up in ${EXERCISE_WORKDIR}.
+		echo Run "$0 clean" then "$0 setup" to start from scratch.
+		exit 20
+	fi
+
+	EXERCISE_WORKDIR=$(mktemp -d '/tmp/ex-XXXXX')
+
+	echo "EXERCISE_WORKDIR=${EXERCISE_WORKDIR}" > ${EXERCISE_SETUP_ENVFILE}
 	echo generic setup things
 	exercise_setup
+}
+
+check_exercise_setup() {
+
+	if [ -f ${EXERCISE_SETUP_ENVFILE} ] ; then
+		return 
+	else
+		echo Failure: Exercise was never set up. 
+		echo Did you forget to "$0 setup" ?
+		exit 20
+	fi
+
+}
+
+generic_clean() {
+
+	echo Cleaning up exercise: $EXERCISE
+	echo 
+
+	check_exercise_setup
+
+	. ${EXERCISE_SETUP_ENVFILE}
+
+	exercise_clean
+
+	rm -rfv $EXERCISE_WORKDIR
+
+	rm ${EXERCISE_SETUP_ENVFILE}
+}
+
+generic_grade() {
+
+	echo Grading exercise: $EXERCISE
+	echo 
+
+	check_exercise_setup
+
+	exercise_grade
 }
 
 subcmd_run() {
@@ -35,16 +88,23 @@ subcmd_run() {
 		generic_setup
 		;;
 	grade)
-		echo grade
+		generic_grade	
 		;;
 	clean)
-		echo clean
+		generic_clean	
+		;;
+	instructions)
+		markdown_view_interactive ${INSTRUCTIONS_TEXT} 
 		;;
 	*)
 		usage
 		;;
 	esac
 
+}
+
+markdown_view_interactive() {
+	pandoc $1 | lynx -stdin
 }
 
 #EXERCISE_WORK_DIR=/tmp/
