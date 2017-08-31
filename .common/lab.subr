@@ -1,7 +1,9 @@
 PREP_SCRIPT=prep.sh
 EXERCISE_ENVFILE=./.exenv
 EXERCISE_SETUP_ENVFILE=./.exsetupenv
+EXERCISE_SETUP_TEXT=setup.md
 INSTRUCTIONS_TEXT=instructions.md
+SOLUTION_DIR=.solution
 
 . $(dirname $0)/${EXERCISE_ENVFILE}
 
@@ -39,8 +41,14 @@ generic_setup() {
 	EXERCISE_WORKDIR=$(mktemp -d '/tmp/ex-XXXXX')
 
 	echo "EXERCISE_WORKDIR=${EXERCISE_WORKDIR}" > ${EXERCISE_SETUP_ENVFILE}
-	echo generic setup things
+
 	exercise_setup
+
+	echo Exercise work directory is ${EXERCISE_WORKDIR}.
+
+	if [ -f ${EXERCISE_SETUP_TEXT} ] ; then
+		markdown_view_stdout ${EXERCISE_SETUP_TEXT}
+	fi
 }
 
 check_exercise_setup() {
@@ -61,7 +69,6 @@ generic_clean() {
 	echo 
 
 	check_exercise_setup
-
 	. ${EXERCISE_SETUP_ENVFILE}
 
 	exercise_clean
@@ -77,8 +84,20 @@ generic_grade() {
 	echo 
 
 	check_exercise_setup
+	. ${EXERCISE_SETUP_ENVFILE}
 
 	exercise_grade
+}
+
+generic_solve() {
+	echo Solving exercise: $EXERCISE
+
+	check_exercise_setup
+	. ${EXERCISE_SETUP_ENVFILE}
+
+	cp -v $SOLUTION_DIR/* $EXERCISE_WORKDIR/
+
+	exercise_solve
 }
 
 subcmd_run() {
@@ -92,6 +111,9 @@ subcmd_run() {
 		;;
 	clean)
 		generic_clean	
+		;;
+	solve)
+		generic_solve
 		;;
 	instructions)
 		markdown_view_interactive ${INSTRUCTIONS_TEXT} 
@@ -107,5 +129,7 @@ markdown_view_interactive() {
 	pandoc $1 | lynx -stdin
 }
 
-#EXERCISE_WORK_DIR=/tmp/
+markdown_view_stdout() {
+	pandoc $1 | lynx -stdin -dump
+}
 
