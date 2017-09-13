@@ -2,6 +2,7 @@ PREP_SCRIPT=prep.sh
 EXERCISE_ENVFILE=./.exenv
 EXERCISE_SETUP_ENVFILE=./.exsetupenv
 EXERCISE_SETUP_TEXT=setup.md
+EXERCISE_MATERIALS=.materials
 INSTRUCTIONS_TEXT=instructions.md
 SOLUTION_DIR=.solution
 
@@ -43,6 +44,10 @@ generic_setup() {
 	echo "EXERCISE_WORKDIR=${EXERCISE_WORKDIR}" > ${EXERCISE_SETUP_ENVFILE}
 
 	exercise_setup
+
+	if [ -d ${EXERCISE_MATERIALS} ] ; then
+		cp -vR ${EXERCISE_MATERIALS}/* ${EXERCISE_WORKDIR}/
+	fi
 
 	echo Exercise work directory is ${EXERCISE_WORKDIR}.
 

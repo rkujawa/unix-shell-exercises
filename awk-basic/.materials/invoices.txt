@@ -1,0 +1,9 @@
+#id;clientid;product name;qty;price
+1;fooclient;product A;3;100
+2;fooclient;product B;4;200
+3;xyzzycompany;product C;2;300
+4;testclient;product B;1;190
+5;fooclient;product A;10;100
+6;testclient;product B;1;200
+7;ccccccc;product C;2;300
+
