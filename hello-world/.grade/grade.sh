@@ -9,7 +9,6 @@ hello_stdout_head() {
 hello_stdout_body() {
 	SCRIPT=./hello.sh
 
-	EXP_STDOUT="foo bar xyzzy"
 	atf_check -o "match:Hello world!" "$(atf_get_srcdir)/$SCRIPT"
 
 	atf_pass
