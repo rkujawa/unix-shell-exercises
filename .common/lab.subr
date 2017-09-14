@@ -3,6 +3,7 @@ EXERCISE_ENVFILE=./.exenv
 EXERCISE_SETUP_ENVFILE=./.exsetupenv
 EXERCISE_SETUP_TEXT=setup.md
 EXERCISE_MATERIALS=.materials
+EXERCISE_GRADESCRIPTS=.grade
 INSTRUCTIONS_TEXT=instructions.md
 SOLUTION_DIR=.solution
 
@@ -90,6 +91,15 @@ generic_grade() {
 
 	check_exercise_setup
 	. ${EXERCISE_SETUP_ENVFILE}
+
+	if [ -d ${EXERCISE_GRADESCRIPTS} ] ; then
+                cp -vR ${EXERCISE_GRADESCRIPTS}/* ${EXERCISE_WORKDIR}/
+        fi
+
+	cd ${EXERCISE_WORKDIR}
+	if [ -f Kyuafile ] ; then
+		kyua test
+	fi
 
 	exercise_grade
 }
