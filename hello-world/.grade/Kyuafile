@@ -1,0 +1,4 @@
+syntax(2)
+test_suite('grade')
+atf_test_program{name='grade.sh'}
+

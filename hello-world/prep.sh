@@ -9,7 +9,7 @@ exercise_setup() {
 }
 
 exercise_grade() {
-	echo This exercise does not offer grading.
+	true
 }
 
 exercise_solve() {
