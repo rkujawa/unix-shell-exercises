@@ -6,11 +6,11 @@ modify the text inputted to sed (and output to stdout) in the following manner:
 
 For example:
 ```
-Some first sentence that mentions license. This one will get modified.`
+Some first sentence that mentions license. This one will get modified.
 ```
 Should be changed into:
 ```
-Some first sentence that mentions foowaz. This one will get modified, desu.`
+Some first sentence that mentions foowaz. This one will get modified, desu.
 ```
 
 Work directory also contains `example-text` file that will be used to test
