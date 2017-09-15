@@ -1,0 +1,10 @@
+26:[    0.000000]   1 disabled
+27:[    0.000000]   2 disabled
+28:[    0.000000]   3 disabled
+29:[    0.000000]   4 disabled
+30:[    0.000000]   5 disabled
+31:[    0.000000]   6 disabled
+32:[    0.000000]   7 disabled
+33:[    0.000000] x86/PAT: PAT MSR is 0, disabled.
+43:[    0.000000] ACPI: Early table checksum verification disabled
+285:[    0.328295] audit: initializing netlink subsys (disabled)

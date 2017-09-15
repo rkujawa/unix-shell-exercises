@@ -1,0 +1,28 @@
+[    0.092518] usbcore: registered new interface driver usbfs
+[    0.093009] usbcore: registered new interface driver hub
+[    0.093568] usbcore: registered new device driver usb
+[    0.540911] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.541930] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.542822] usb usb1: Product: EHCI Host Controller
+[    0.543425] usb usb1: Manufacturer: Linux 4.12.8-300.fc26.x86_64 ehci_hcd
+[    0.544267] usb usb1: SerialNumber: 0000:00:04.7
+[    0.551849] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+[    0.552694] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.553583] usb usb2: Product: UHCI Host Controller
+[    0.554207] usb usb2: Manufacturer: Linux 4.12.8-300.fc26.x86_64 uhci_hcd
+[    0.555042] usb usb2: SerialNumber: 0000:00:04.0
+[    0.560425] usb usb3: New USB device found, idVendor=1d6b, idProduct=0001
+[    0.561294] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.562245] usb usb3: Product: UHCI Host Controller
+[    0.562874] usb usb3: Manufacturer: Linux 4.12.8-300.fc26.x86_64 uhci_hcd
+[    0.563781] usb usb3: SerialNumber: 0000:00:04.1
+[    0.569487] usb usb4: New USB device found, idVendor=1d6b, idProduct=0001
+[    0.570397] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.571330] usb usb4: Product: UHCI Host Controller
+[    0.571974] usb usb4: Manufacturer: Linux 4.12.8-300.fc26.x86_64 uhci_hcd
+[    0.572868] usb usb4: SerialNumber: 0000:00:04.2
+[    0.575000] usbcore: registered new interface driver usbserial
+[    0.575824] usbcore: registered new interface driver usbserial_generic
+[    0.576710] usbserial: USB Serial support registered for generic
+[    0.591994] usbcore: registered new interface driver usbhid
+[    0.592644] usbhid: USB HID core driver

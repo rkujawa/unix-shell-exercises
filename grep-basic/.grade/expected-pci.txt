@@ -1,0 +1,38 @@
+[    0.075682] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+[    0.076433] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+[    0.077045] pci 0000:00:01.1: [8086:7010] type 00 class 0x010180
+[    0.077363] pci 0000:00:01.1: reg 0x20: [io  0xc000-0xc00f]
+[    0.077497] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    0.078003] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    0.078668] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    0.079003] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    0.080199] pci 0000:00:01.3: [8086:7113] type 00 class 0x068000
+[    0.080574] pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+[    0.081010] pci 0000:00:01.3: quirk: [io  0xb100-0xb10f] claimed by PIIX4 SMB
+[    0.082255] pci 0000:00:03.0: [1af4:1000] type 00 class 0x020000
+[    0.082356] pci 0000:00:03.0: reg 0x10: [io  0xc020-0xc03f]
+[    0.082415] pci 0000:00:03.0: reg 0x14: [mem 0xf0000000-0xf0000fff]
+[    0.083118] pci 0000:00:03.0: reg 0x30: [mem 0xf0010000-0xf001ffff pref]
+[    0.083412] pci 0000:00:04.0: [8086:2934] type 00 class 0x0c0300
+[    0.083677] pci 0000:00:04.0: reg 0x20: [io  0xc040-0xc05f]
+[    0.083962] pci 0000:00:04.1: [8086:2935] type 00 class 0x0c0300
+[    0.084229] pci 0000:00:04.1: reg 0x20: [io  0xc060-0xc07f]
+[    0.084555] pci 0000:00:04.2: [8086:2936] type 00 class 0x0c0300
+[    0.084819] pci 0000:00:04.2: reg 0x20: [io  0xc080-0xc09f]
+[    0.085137] pci 0000:00:04.7: [8086:293a] type 00 class 0x0c0320
+[    0.085209] pci 0000:00:04.7: reg 0x10: [mem 0xf0020000-0xf0020fff]
+[    0.085707] pci 0000:00:05.0: [1af4:1001] type 00 class 0x010000
+[    0.085804] pci 0000:00:05.0: reg 0x10: [io  0xc0c0-0xc0ff]
+[    0.085869] pci 0000:00:05.0: reg 0x14: [mem 0xf0021000-0xf0021fff]
+[    0.086487] pci 0000:00:06.0: [1af4:1002] type 00 class 0x050000
+[    0.086557] pci 0000:00:06.0: reg 0x10: [io  0xc100-0xc11f]
+[    0.127820] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    0.128441] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+[    0.129058] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[    0.531430] ehci-pci 0000:00:04.7: EHCI Host Controller
+[    0.532097] ehci-pci 0000:00:04.7: new USB bus registered, assigned bus number 1
+[    0.533182] ehci-pci 0000:00:04.7: irq 11, io mem 0xf0020000
+[    0.540092] ehci-pci 0000:00:04.7: USB 2.0 started, EHCI 1.00
+[    1.165681] virtio-pci 0000:00:03.0: virtio_pci: leaving for legacy driver
+[    1.169179] virtio-pci 0000:00:05.0: virtio_pci: leaving for legacy driver
+[    1.197904] virtio-pci 0000:00:06.0: virtio_pci: leaving for legacy driver

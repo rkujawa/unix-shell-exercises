@@ -1,0 +1,127 @@
+[    0.000000] x86/fpu: x87 FPU will use FXSAVE
+[    0.000000] BIOS-e820: [mem 0x000000000009d800-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000002fffd000-0x000000002fffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fffbc000-0x00000000ffffffff] reserved
+[    0.000000] SMBIOS 2.4 present.
+[    0.000000] Hypervisor detected: KVM
+[    0.000000]   C0000-FFFFF write-protect
+[    0.000000] BRK [0x17493000, 0x17493fff] PGTABLE
+[    0.000000] BRK [0x17494000, 0x17494fff] PGTABLE
+[    0.000000] BRK [0x17495000, 0x17495fff] PGTABLE
+[    0.000000] BRK [0x17496000, 0x17496fff] PGTABLE
+[    0.000000] BRK [0x17497000, 0x17497fff] PGTABLE
+[    0.000000] RAMDISK: [mem 0x2e4c2000-0x2f37ffff]
+[    0.000000] ACPI: RSDP 0x00000000000FDA00 000014 (v00 BOCHS )
+[    0.000000] ACPI: RSDT 0x000000002FFFD670 000034 (v01 BOCHS  BXPCRSDT 00000001 BXPC 00000001)
+[    0.000000] ACPI: FACP 0x000000002FFFFE40 000074 (v01 BOCHS  BXPCFACP 00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x000000002FFFD950 0024A2 (v01 BXPC   BXDSDT   00000001 INTL 20090123)
+[    0.000000] ACPI: FACS 0x000000002FFFFE00 000040
+[    0.000000] ACPI: SSDT 0x000000002FFFD8B0 00009E (v01 BOCHS  BXPCSSDT 00000001 BXPC 00000001)
+[    0.000000] ACPI: APIC 0x000000002FFFD7C0 000078 (v01 BOCHS  BXPCAPIC 00000001 BXPC 00000001)
+[    0.000000] ACPI: SSDT 0x000000002FFFD6B0 00010F (v01 BXPC   BXSSDTPC 00000001 INTL 20090123)
+[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000]   DMA32    [mem 0x0000000001000000-0x000000002fffcfff]
+[    0.000000]   Device   empty
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009cfff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x000000002fffcfff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x000000002fffcfff]
+[    0.000000] ACPI: PM-Timer IO Port: 0xb008
+[    0.000000] ACPI: IRQ0 used by override.
+[    0.000000] ACPI: IRQ5 used by override.
+[    0.000000] ACPI: IRQ9 used by override.
+[    0.000000] ACPI: IRQ10 used by override.
+[    0.000000] ACPI: IRQ11 used by override.
+[    0.000000] smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+[    0.000000] Policy zone: DMA32
+[    0.001000] 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=1.
+[    0.001000] NR_IRQS:524544 nr_irqs:256 16
+[    0.001000] Console: colour dummy device 80x25
+[    0.001008] tsc: Detected 4092.348 MHz processor
+[    0.003020] ACPI: Core revision 20170303
+[    0.026004] smp: Brought up 1 node, 1 CPU
+[    0.028620] x86/mm: Memory block size: 128MB
+[    0.035097] cpuidle: using governor menu
+[    0.036101] ACPI: bus type PCI registered
+[    0.041063] ACPI: Added _OSI(Module Device)
+[    0.041573] ACPI: Added _OSI(Processor Device)
+[    0.042003] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.045719] ACPI: (supports S0 S5)
+[    0.046002] ACPI: Using IOAPIC for interrupt routing
+[    0.071389] PCI host bridge to bus 0000:00
+[    0.071869] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.072004] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.074014] pci_bus 0000:00: root bus resource [mem 0xe0000000-0xfebfffff window]
+[    0.075004] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.077363] pci 0000:00:01.1: reg 0x20: [io  0xc000-0xc00f]
+[    0.082356] pci 0000:00:03.0: reg 0x10: [io  0xc020-0xc03f]
+[    0.082415] pci 0000:00:03.0: reg 0x14: [mem 0xf0000000-0xf0000fff]
+[    0.083118] pci 0000:00:03.0: reg 0x30: [mem 0xf0010000-0xf001ffff pref]
+[    0.083677] pci 0000:00:04.0: reg 0x20: [io  0xc040-0xc05f]
+[    0.084229] pci 0000:00:04.1: reg 0x20: [io  0xc060-0xc07f]
+[    0.084819] pci 0000:00:04.2: reg 0x20: [io  0xc080-0xc09f]
+[    0.085209] pci 0000:00:04.7: reg 0x10: [mem 0xf0020000-0xf0020fff]
+[    0.085804] pci 0000:00:05.0: reg 0x10: [io  0xc0c0-0xc0ff]
+[    0.085869] pci 0000:00:05.0: reg 0x14: [mem 0xf0021000-0xf0021fff]
+[    0.086557] pci 0000:00:06.0: reg 0x10: [io  0xc100-0xc11f]
+[    0.087464] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 *10 11)
+[    0.088084] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+[    0.088734] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+[    0.089088] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 10 *11)
+[    0.090032] ACPI: PCI Interrupt Link [LNKS] (IRQs *9)
+[    0.092078] ACPI: bus type USB registered
+[    0.093568] usbcore: registered new device driver usb
+[    0.094061] EDAC MC: Ver: 3.0.0
+[    0.094600] PCI: Using ACPI for IRQ routing
+[    0.095157] e820: reserve RAM buffer [mem 0x0009d800-0x0009ffff]
+[    0.095158] e820: reserve RAM buffer [mem 0x2fffd000-0x2fffffff]
+[    0.097703] clocksource: Switched to clocksource kvm-clock
+[    0.114366] pnp: PnP ACPI init
+[    0.115212] pnp: PnP ACPI: found 5 devices
+[    0.122265] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.122266] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.122269] pci_bus 0000:00: resource 7 [mem 0xe0000000-0xfebfffff window]
+[    0.327186] Freeing initrd memory: 15096K
+[    0.335047] SELinux:  Registering netfilter hooks
+[    0.494716] io scheduler noop registered
+[    0.498813] ACPI: Power Button [PWRF]
+[    0.529271] libphy: Fixed MDIO Bus: probed
+[    0.531430] ehci-pci 0000:00:04.7: EHCI Host Controller
+[    0.533182] ehci-pci 0000:00:04.7: irq 11, io mem 0xf0020000
+[    0.540911] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.542822] usb usb1: Product: EHCI Host Controller
+[    0.544986] hub 1-0:1.0: USB hub found
+[    0.545493] hub 1-0:1.0: 6 ports detected
+[    0.546255] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.548739] uhci_hcd 0000:00:04.0: UHCI Host Controller
+[    0.550389] uhci_hcd 0000:00:04.0: detected 2 ports
+[    0.551849] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+[    0.553583] usb usb2: Product: UHCI Host Controller
+[    0.555764] hub 2-0:1.0: USB hub found
+[    0.556276] hub 2-0:1.0: 2 ports detected
+[    0.557227] uhci_hcd 0000:00:04.1: UHCI Host Controller
+[    0.558880] uhci_hcd 0000:00:04.1: detected 2 ports
+[    0.560425] usb usb3: New USB device found, idVendor=1d6b, idProduct=0001
+[    0.562245] usb usb3: Product: UHCI Host Controller
+[    0.564577] hub 3-0:1.0: USB hub found
+[    0.565110] hub 3-0:1.0: 2 ports detected
+[    0.566135] uhci_hcd 0000:00:04.2: UHCI Host Controller
+[    0.567889] uhci_hcd 0000:00:04.2: detected 2 ports
+[    0.569487] usb usb4: New USB device found, idVendor=1d6b, idProduct=0001
+[    0.571330] usb usb4: Product: UHCI Host Controller
+[    0.573683] hub 4-0:1.0: USB hub found
+[    0.574222] hub 4-0:1.0: 2 ports detected
+[    0.592644] usbhid: USB HID core driver
+[    0.598456] Segment Routing with IPv6
+[    0.599047] mip6: Mobile IPv6
+[    0.619829] Key type big_key registered
+[    0.621752] Key type encrypted registered
+[    0.623002] rtc_cmos 00:00: setting system clock to 2017-09-08 12:04:58 UTC (1504872298)
+[    0.692304] Freeing unused kernel memory: 2160K
+[    0.695781] Freeing unused kernel memory: 1532K
+[    0.697923] Freeing unused kernel memory: 404K
+[    0.768927] systemd[1]: Listening on udev Control Socket.
+[    0.774273] systemd[1]: Listening on udev Kernel Socket.
+[    1.758759] XFS (dm-0): Mounting V5 Filesystem
+[    2.900224] SELinux:  Setting up existing superblocks.
+[   15.000078] ip_set: protocol 6

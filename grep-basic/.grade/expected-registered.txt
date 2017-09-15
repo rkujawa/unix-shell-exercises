@@ -1,0 +1,42 @@
+[    0.036101] ACPI: bus type PCI registered
+[    0.055343] acpiphp: Slot [1] registered
+[    0.055857] acpiphp: Slot [2] registered
+[    0.056031] acpiphp: Slot [3] registered
+[    0.056517] acpiphp: Slot [4] registered
+[    0.057029] acpiphp: Slot [5] registered
+[    0.057509] acpiphp: Slot [6] registered
+[    0.058026] acpiphp: Slot [7] registered
+[    0.058512] acpiphp: Slot [8] registered
+[    0.059030] acpiphp: Slot [9] registered
+[    0.059516] acpiphp: Slot [10] registered
+[    0.060028] acpiphp: Slot [11] registered
+[    0.060529] acpiphp: Slot [12] registered
+[    0.061028] acpiphp: Slot [13] registered
+[    0.061521] acpiphp: Slot [14] registered
+[    0.062031] acpiphp: Slot [15] registered
+[    0.062533] acpiphp: Slot [16] registered
+[    0.063030] acpiphp: Slot [17] registered
+[    0.063523] acpiphp: Slot [18] registered
+[    0.064027] acpiphp: Slot [19] registered
+[    0.064520] acpiphp: Slot [20] registered
+[    0.065040] acpiphp: Slot [21] registered
+[    0.066004] acpiphp: Slot [22] registered
+[    0.066533] acpiphp: Slot [23] registered
+[    0.067028] acpiphp: Slot [24] registered
+[    0.067536] acpiphp: Slot [25] registered
+[    0.068027] acpiphp: Slot [26] registered
+[    0.068536] acpiphp: Slot [27] registered
+[    0.069031] acpiphp: Slot [28] registered
+[    0.069537] acpiphp: Slot [29] registered
+[    0.070032] acpiphp: Slot [30] registered
+[    0.070534] acpiphp: Slot [31] registered
+[    0.092078] ACPI: bus type USB registered
+[    0.329852] Key type blacklist registered
+[    0.492670] Key type asymmetric registered
+[    0.493187] Asymmetric key parser 'x509' registered
+[    0.494716] io scheduler noop registered
+[    0.495190] io scheduler deadline registered
+[    0.496315] io scheduler mq-deadline registered
+[    0.619829] Key type big_key registered
+[    0.621752] Key type encrypted registered
+[   13.971046] Ebtables v2.0 registered
