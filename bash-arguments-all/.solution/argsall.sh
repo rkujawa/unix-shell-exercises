@@ -3,6 +3,6 @@
 echo $*
 
 for i in $@ ; do
-	touch $@
+	touch $i
 done
 
