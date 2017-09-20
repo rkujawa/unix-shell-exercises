@@ -11,7 +11,7 @@ exercise_setup() {
 
 exercise_grade() {
 	FIB_SCRIPT=fib.sh
-	CORRECT_FIB7="0 1 1 2 3 5 8 13"
+	CORRECT_FIB7="0 1 1 2 3 5 8"
 
 	if [ ! -x $EXERCISE_WORKDIR/$FIB_SCRIPT ] ; then
 		echo Fail: $EXERCISE_WORKDIR/$FIB_SCRIPT does not exist or is not executable.

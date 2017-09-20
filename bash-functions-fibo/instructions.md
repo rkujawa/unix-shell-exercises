@@ -15,5 +15,5 @@ The script should use a shell function(s) to implement the algorithm. The amount
 
 Should result in the following numbers outputted to the stdout:
 
-`0 1 1 2 3 5 8 13`
+`0 1 1 2 3 5 8`
 

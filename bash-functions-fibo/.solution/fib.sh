@@ -8,7 +8,8 @@ fib() {
 	fi
 }
 
-for i in $(seq 0 $1) ; do
+ELEM=$((${1}-1))
+for i in $(seq 0 $ELEM) ; do
 	fib $i
 done
 
