@@ -1,27 +1,27 @@
 BEGIN {
-	FS=";";
+	FS=";"
 }
 
 /^[^#]/ {
-	inum++;
-	total += ($5 * $4) ;	
-	clientsum[$2] += ($5 * $4) ;
+	inum++
+	total += ($5 * $4)
+	clientsum[$2] += ($5 * $4)
 }	
 
 END {
-	print "invoices:" inum;
-	print "total:" total;
+	print "invoices:" inum
+	print "total:" total
 
-	bestclient_id = "";
-	bestclient_sum = 0;
+	bestclient_id = ""
+	bestclient_sum = 0
 
 	for (i in clientsum) {
 		if (clientsum[i] > bestclient_sum) {
-			bestclient_sum = clientsum[i];
-			bestclient_id = i;
+			bestclient_sum = clientsum[i]
+			bestclient_id = i
 		}
 	}
 
-	print "best_client:" bestclient_id;
+	print "best_client:" bestclient_id
 }
 
