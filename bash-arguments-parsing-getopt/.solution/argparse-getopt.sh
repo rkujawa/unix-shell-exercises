@@ -41,7 +41,7 @@ while true; do
 	esac
 done
 
-if [[ $# -ne 1 ]] ; then
+if [ $# -ne 1 ] ; then
 	usage
 	exit 10 
 fi
