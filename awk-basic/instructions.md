@@ -5,6 +5,7 @@ The `invoices.txt` is a file in CSV format, containing information about payment
 - Numeric ID of the invoice.
 - ID of the client.
 - Name of the product sold to the client.
+- Amount of the product that was sold.
 - Price of the product.
 
 All lines starting with # should be treated as comments and ignored by your script. The script should take no arguments and expect that data will be passed on stdin.
