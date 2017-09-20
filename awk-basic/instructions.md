@@ -1,6 +1,6 @@
 In the work directory, prepare an awk script `report-income.awk` which outputs (on stdout) a report based on data from `invoices.txt` file. 
 
-The `invoices.txt` is a file in CSV format, containing information about payment made by your clients. Each line represents a separate payment. The columns (starting with leftmost) have the following meaning:
+The `invoices.txt` is a file in CSV format (with `;` as separator), containing information about payment made by your clients. Each line represents a separate payment. The columns (starting with leftmost) have the following meaning:
 
 - Numeric ID of the invoice.
 - ID of the client.
